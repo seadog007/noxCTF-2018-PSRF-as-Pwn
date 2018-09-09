@@ -2,7 +2,7 @@
 
 ## Introduction
 This article was a CTF (Capture the flag) writeup, and it shows a common mistake that happend when designing a CTF challange.
-Basically, it shows if a challenge can access the internal network, and the machine is on a Cloud service provider, then you might have the change to take it over.
+Basically, it shows if a challenge can access the internal network, and the machine is on a Cloud service provider, then you might have the chance to take it over.
 The following are the technique details.
 
 ## Story
