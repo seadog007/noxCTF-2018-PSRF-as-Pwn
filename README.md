@@ -11,10 +11,10 @@ The challenge provide an input box and a radio box, and it will send a HTTP GET 
 like this, and it will return an image name, and the result of the SSRF will store under `http://35.241.245.36/images/`  
   
 The challenge has kubernetes logo on the bottom of the page like the screenshot below, and the IP is 35.241.245.36.  
-![Page Screenshot]()  
+![Page Screenshot](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-10%20%E4%B8%8A%E5%8D%883.10.19.png)  
   
 I immediately realized that is a GCP machine, so I tested the backend server by sending HTTP request to my server to see if it is also on GCP, and it is.  
-![GCP determine]() 
+![GCP determine](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-10%20%E4%B8%8A%E5%8D%883.38.42.png) 
 
 ## Cloud Based Attack
 I think there is not much people know about [http://metadata.google.internal](http://metadata.google.internal).  
@@ -94,14 +94,19 @@ The API detail can be found on [Managing SSH keys in Metadata](https://cloud.goo
 
 ## Solving the challenge by not its design
 I ssh to the server. I know it is using kubernetes, so I run `docker ps`  
-![docker ps]()
+![docker ps](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-10%20%E4%B8%8A%E5%8D%883.57.22.png)
 
 Then `docker exec -it xxxxxxxxx /bin/sh`  
 Then `ls`
 
-![source code]()
+![source code](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-07%20%E4%B8%8B%E5%8D%8811.10.32.png)
 
 Easy, just solved the challenge by looking at the source code
+
+## Follow up
+I report this security issue to the team, and just fix it pretty quick.
+![coversation_1](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-07%20%E4%B8%8B%E5%8D%8811.28.22.png)
+![coversation_2](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-07%20%E4%B8%8B%E5%8D%8811.43.38.png)
 
 ## Applicable environment
 Not only GCP has these kind of management interface, you can also found similar thing on AWS.  
