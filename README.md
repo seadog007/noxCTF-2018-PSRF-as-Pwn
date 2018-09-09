@@ -104,8 +104,8 @@ Then `ls`
 Easy, just solved the challenge by looking at the source code
 
 ## Follow up
-I report this security issue to the team, and just fix it pretty quick.
-![coversation_1](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-07%20%E4%B8%8B%E5%8D%8811.28.22.png)
+I report this security issue to the team, and just fix it pretty quick.  
+![coversation_1](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-07%20%E4%B8%8B%E5%8D%8811.28.22.png)  
 ![coversation_2](https://github.com/seadog007/noxCTF-2018-PSRF-as-Pwn/raw/master/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-07%20%E4%B8%8B%E5%8D%8811.43.38.png)
 
 ## Applicable environment
