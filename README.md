@@ -113,4 +113,4 @@ Not only GCP has these kind of management interface, you can also found similar 
 Most of CTF use docker to host challenges, but in most of the challenges that don't limit the network, so it is possible to do a privilege escalation on pwn or web challenges.
 
 ## References
-(Twistlock Protection for Kubernetes Specific Attacks)[https://www.twistlock.com/2018/05/30/twistlock-protection-kubernetes-specific-attacks/]
+[Twistlock Protection for Kubernetes Specific Attacks](https://www.twistlock.com/2018/05/30/twistlock-protection-kubernetes-specific-attacks/)
