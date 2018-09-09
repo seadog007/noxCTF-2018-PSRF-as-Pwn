@@ -1,5 +1,10 @@
 # noxCTF-2018-PSRF-as-Pwn
 
+## Introduction
+This article was a CTF (Capture the flag) writeup, and it shows a common mistake that happend when designing a CTF challange.
+Basically, it shows if a challenge can access the internal network, and the machine is on a Cloud service provider, then you might have the change to take it over.
+The following are the technique details.
+
 ## Story
 When I was play [noxCTF 2018](https://ctftime.org/event/671), I saw a challenge named PSRF and it under web category, then I thought that might be SSRF, PostScript, or both.  
 Then I decided to look at that.
