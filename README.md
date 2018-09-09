@@ -6,7 +6,7 @@ Then I decided to look at that.
 I trying to solve it by the way I think it should be, but I always got HTTP 500 when I trying to access another server, so I decided to use another way to do it.
 
 There are some terms that usually appear on CTF and Information Security Area
-- SSRF: [Server-Side_Request_Forgery](https://en.wikipedia.org/wiki/Server-side_request_forgery)
+- SSRF: [Server-Side Request Forgery](https://en.wikipedia.org/wiki/Server-side_request_forgery)
 It is become a common vulnerability after [this presentation by Orange](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
 - PostScript: [Wikipedia](https://en.wikipedia.org/wiki/PostScript)
   Ghostscript is its common interpreter, and there are [multiple vulnerabilities](https://www.exploit-db.com/exploits/45243/) disclose recently. It was one of the [challenge](https://ctftime.org/task/6522) of [TokyoWesterns CTF 4th 2018](https://ctftime.org/event/651)
